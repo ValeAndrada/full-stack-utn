@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* "aling-items: center" y "height: 100vh" son inherentes para que la carta quede al medio*/
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  width: 300px;
+}
