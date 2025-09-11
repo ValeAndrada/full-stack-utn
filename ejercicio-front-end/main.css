@@ -5,9 +5,18 @@
 }
 
 body {
+  background-image: url("../order-summary-component-main/images/pattern-background-desktop.svg");
+  /* Evita que la imagen se repita */
+  background-repeat: no-repeat;
+  /* Posición de la imagen en el eje horizontal y en el eje vertical */
+  /*background-position: top center;
+  /* Ocupa el 100% del ancho y ajusta el alto automáticamente. */
+  background-size: 100% auto;
+  /* Fija la imagen para que no se mueva al hacer scroll */
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
-  /* "aling-items: center" y "height: 100vh" son inherentes para que la carta quede al medio*/
+  /* "aling-items: center" y "height: 100vh" son inherentes para que la carta quede al medio */
   align-items: center;
   height: 100vh;
 }
@@ -17,5 +26,12 @@ img {
 }
 
 section {
-  width: 300px;
+  background-color: white;
+  width: 350px;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
 }
