@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: #E0E8FF;
   background-image: url("./pattern-background-desktop.svg");
   /* Evita que la imagen se repita */
   background-repeat: no-repeat;
@@ -28,7 +29,7 @@ img {
 section {
   background-color: white;
   width: 350px;
-  height: 550px;
+  height: 533px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
@@ -37,13 +38,17 @@ section {
 }
 
 .content {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 
 .content h2 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.content p {
+  color: gray;
 }
 
 .plans {
@@ -53,14 +58,60 @@ section {
   justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .plans img {
-  width: 30px;
+  width: 45px;
+}
+
+.plans a {
+  font-size: small;
+  transition: 0.1s;
+}
+
+.plans a:hover {
+  scale: 1.1;
+}
+
+.plans p {
+  color: gray;
+  font-size: small;
 }
 
 .btns {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.btns button {
+  display: block;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  transition: 0.1s;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.btn-payment {
+  background-color: #382ae1;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 11px 25px -15px rgba(0, 0, 0, 1);
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: gray;
+  font-size: small;
 }
