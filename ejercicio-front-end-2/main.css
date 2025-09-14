@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./bg-pattern-top-desktop.svg);
+  background-image: url(./bg-pattern-bottom-desktop.svg);
+}
