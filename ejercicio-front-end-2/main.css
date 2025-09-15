@@ -80,3 +80,66 @@ h5,
 p {
   line-height: 1.3;
 }
+
+.opinion-one:hover,
+.opinion-two:hover,
+.opinion-three:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.ratings {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 150px;
+  width: fit-content;
+}
+
+.ratings h4 {
+  color: #511f50;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.ratings i {
+  color: gold;
+  font-weight: bold;
+}
+
+.ratings i:hover {
+  scale: 1.5;
+}
+
+.rated-one,
+.rated-two,
+.rated-three {
+  background-color: #f7f2f8;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+
+}
+
+.rated-one {
+  margin-right: 250px;
+}
+
+.rated-two {
+  margin-left: 30px;
+  margin-right: 220px;
+}
+
+.rated-three {
+  margin-left: 60px;
+  margin-right: 195px;
+}
+
+.rated-one:hover,
+.rated-two:hover,
+.rated-three:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
