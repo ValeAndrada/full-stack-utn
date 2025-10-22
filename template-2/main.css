@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box: Cambia la forma en que el navegador calcula el tamaño total de un elemento (su ancho y altura) dado que incluye el padding y el border dentro del width y el height.
+  Por defecto, box-sizing es content-box en el cual el padding y el border se añaden fuera del width y height definidos */
+  box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
 }
 
@@ -11,7 +14,7 @@ body {
   background-attachment: fixed;
   padding: 130px;
   margin-left: 35px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .description h3 {
@@ -142,4 +145,39 @@ p {
 .rated-three:hover {
   cursor: pointer;
   scale: 1.1;
+}
+
+/* Responsive estándar para tablets
+@media (max-width: 880px) {
+}*/
+
+/* Responsive estándar para celulares */
+@media (max-width: 480px) {
+
+  body {
+    width: 100%;
+  }
+
+  .cards,
+  .opinion-one-header,
+  .opinion-two-header,
+  .opinion-three-header,
+  .rated-one,
+  .rated-two,
+  .rated-three {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ratings {
+    width: 100%;
+    padding: 0;
+    margin-top: 530px;
+  }
+
+  .cards {
+    margin-top: 300px;
+  }
+
 }
