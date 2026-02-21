@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+  background-color: yellowgreen;
+  padding: 40px;
+}
+
+section .puntuacion,
+section .comentarios {
+  background-color: violet;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+section .puntuacion {
+  background-color: turquoise;
+  gap: 80px;
+}
+
+/* De la siguiente manera, solo traerá los div que sean hijos directos de esa clase y no todos los div que haya en esa clase (puntuacion, en este caso) */
+
+.puntuacion>div {
+  background-color: beige;
+}
+
+
+.puntuacion-titulares {
+  padding: 20px;
+  /* widht: 50%: esta propiedad divide el contenido a la mitad dentro del contedor*/
+  width: 50%;
+}
+
+.puntuacion-valoraciones {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contenedor-valoracion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* align-self: permite alinear la posición del contenedor en el eje transversal (por defecto, flex-direction es row) */
+
+.contenedor-valoracion-1 {
+  display: flex;
+  background-color: aqua;
+  align-self: start;
+}
+
+.contenedor-valoracion-2 {
+  display: flex;
+  background-color: aqua;
+  align-self: center;
+}
+
+.contenedor-valoracion-3 {
+  display: flex;
+  background-color: aqua;
+  align-self: end;
+}
+
+/* Esta forma sería la más eficiente de hacerlo dado que se está utilizando una propiedad nativa de CSS que es la pseudoclase ":nth-child()" (evitando escribir más código HTML) la cual toma la posición específica (la que se pasa como valor entre paréntesis) de un elemento hijo dentro de un contenedor padre
+
+.contenedor-valoracion-1:nth-child(1) {
+  align-self: start;
+}
+
+.contenedor-valoracion-1:nth-child(2) {
+align-self: center;  
+}
+
+.contenedor-valoracion-1:nth-child(3) {
+align-self: end;  
+}*/
+
+.puntuacion-titulares h2 {
+  font-size: 40px;
+  width: 50%;
+  margin-bottom: 20px;
+}

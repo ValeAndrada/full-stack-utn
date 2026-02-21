@@ -1,0 +1,76 @@
+/* ---------------------------------------------------------------------- */
+/* 1. Reset Básico (Buena Práctica) */
+/* ---------------------------------------------------------------------- */
+
+/* La regla '*' selecciona *todos* los elementos */
+*,
+*::before,
+/* ::before y ::after son pseudo-elementos */
+*::after {
+  /* box-sizing: border-box es esencial para que el diseño sea predecible
+     (El ancho/alto incluye el padding y el borde, no solo el contenido) */
+  box-sizing: border-box;
+  /* Elimina el margen por defecto de los navegadores en todos los elementos */
+  margin: 0;
+  /* Elimina el relleno por defecto de los navegadores */
+  padding: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* 2. Estilos para el Cuerpo (body) de la Página */
+/* ---------------------------------------------------------------------- */
+
+/* Selecciona el elemento 'body' (el contenido visible de la página) */
+body {
+  /* Establece una fuente legible para toda la página */
+  font-family: Arial, sans-serif;
+  /* Define el color de fondo de la página */
+  background-color: #f4f4f4;
+  /* Un gris claro */
+  /* Define el color del texto por defecto */
+  color: #333;
+  /* Un gris oscuro */
+  /* Opcional: Altura mínima para que el fondo cubra toda la ventana */
+  min-height: 100vh;
+}
+
+/* ---------------------------------------------------------------------- */
+/* 3. Estilos de un Contenedor (Clase) */
+/* ---------------------------------------------------------------------- */
+
+/* El '.' (punto) selecciona una CLASE, que se usa en HTML con class="contenedor" */
+.contenedor {
+  /* Define el ancho máximo del contenedor */
+  max-width: 1000px;
+  /* margin: 0 auto; centra el bloque horizontalmente en la página */
+  margin: 50px auto;
+  /* Añade un relleno interno (espacio entre el contenido y el borde) */
+  padding: 20px;
+  /* Añade un color de fondo para distinguirlo del 'body' */
+  background-color: white;
+  /* Crea un borde sutil alrededor del contenedor */
+  border: 1px solid #ccc;
+  /* Opcional: Borde redondeado para un aspecto moderno */
+  border-radius: 8px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* 4. Estilos de Tipografía y Enlaces */
+/* ---------------------------------------------------------------------- */
+
+/* Selecciona todos los encabezados de nivel 1 */
+h1 {
+  /* Tamaño de fuente más grande */
+  font-size: 2.5em;
+  /* 'em' es relativo al tamaño de la fuente base */
+  /* Margen inferior para separarlo del contenido siguiente */
+  margin-bottom: 15px;
+  /* Centra el texto */
+  text-align: center;
+}
+
+/* Selecciona los enlaces (hipervínculos) */
+a {
+  /* Quita la decoración de texto (subrayado) por defecto */
+  text-decoration: none;
+  /* Cambia el color del
